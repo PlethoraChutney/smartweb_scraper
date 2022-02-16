@@ -55,7 +55,7 @@ def get_content(file_glob):
 				names.append(find_dep(name_a))
 
 	with open(f'names.csv', 'w') as f:
-		f.write('First,Last,Department,Role\n')
+		f.write('Last,First,Department,Role\n')
 		for name in names:
 			f.write(f'{name[0]},{name[1]},{name[2]}\n')
 
